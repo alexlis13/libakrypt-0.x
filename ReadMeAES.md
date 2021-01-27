@@ -3,6 +3,7 @@
 См. readme библиотеки libakrypt
 ## Что сделано ##
 Было реализовано встраивание реализации алгоритма блочного шифрования AES-128, регламентированного стандартом FIPS 197 https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf
+
 Для лучшего понимания шифра была также использована данная литература - https://www.nrjetix.com/fileadmin/doc/publications/Lectures_security/Lecture3-1.pdf
 
 Для встраивания реализции алгоритма шифрования AES-128 в библиотеку были внесены следующие изменения:
@@ -40,5 +41,6 @@
         static void aes_decrypt_128(ak_skey skey, const uint8_t * ciphertext, uint8_t * plaintext)
 
 Функция для тестирования работоспособности:
+
         bool_t aes128_test()
         
