@@ -73,6 +73,7 @@ set( AKRYPT_SOURCES
    source/ak_bckey.c
    source/ak_cmac.c
    source/ak_magma.c
+   source/ak_aes128.c
    source/ak_kuznechik.c
    source/ak_acpkm.c
    source/ak_mgm.c
@@ -192,6 +193,7 @@ set ( ARITHMETIC_TESTS_LIST
       asn1-keys
       asn1-cert
       blom-keys
+      aes128
     )
 
 if( LIBAKRYPT_GMP_TESTS )
