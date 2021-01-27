@@ -167,6 +167,8 @@ extern "C" {
  dll_export bool_t ak_libakrypt_test_block_ciphers( void ); 
 /*! \brief Тестирование корректной работы алгоритма блочного шифрования Магма (ГОСТ Р 34.12-2015). */
  dll_export bool_t ak_libakrypt_test_magma( void );
+/*! \brief Тестирование корректной работы алгоритма блочного шифрования AES128. */
+ dll_export bool_t aes128_test( void );
 /*! \brief Тестирование корректной работы алгоритма блочного шифрования Кузнечик (ГОСТ Р 34.12-2015). */
  dll_export bool_t ak_libakrypt_test_kuznechik( void );
 /*! \brief Функция тестирует корректность реаличных реализаций алгоритма cmac. */
@@ -677,6 +679,8 @@ extern "C" {
 /* ----------------------------------------------------------------------------------------------- */
 /*! \brief Инициализация секретного ключа алгоритма блочного шифрования Магма. */
  dll_export int ak_bckey_create_magma( ak_bckey );
+/*! \brief Инициализация секретного ключа алгоритма блочного шифрования AES128. */ 
+ dll_export int ak_bckey_create_aes128(ak_bckey bkey);
 /*! \brief Инициализация секретного ключа алгоритма блочного шифрования Кузнечик. */
  dll_export int ak_bckey_create_kuznechik( ak_bckey );
 /*! \brief Инициализация секретного ключа алгоритма блочного шифрования по его OID. */
